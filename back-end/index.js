@@ -10,6 +10,7 @@ const app = express();
 
 
 app.use(cookieParser());
+app.use(cors());
 
 app.get('/', (req, res) => {
     // Show the cookies
@@ -29,10 +30,9 @@ app.get('/', (req, res) => {
         permanentValue = parseInt(permanentValue) + 1;
     }
     
-    // Set the random cookie
 
     res.cookie("session_cookie", sessionValue);
-    res.cookie("permanent_cookie", permanentValue,{maxAge: 3600000});
+    res.cookie("permanent_cookie", permanentValue,{maxAge: 36000});
 
     const html = `
         <div style="width: fit-content; margin: 0 auto; box-shadow: 5px 5px 15px 5px #000000; background: #A3A45C; padding: 20px; border-radius: 6px;">
