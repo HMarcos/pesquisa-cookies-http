@@ -24,7 +24,7 @@ Um cookie HTTP também pode ser interpretado como um pequeno fragmento de dados 
 
 ## Tipos de Cookies
 
-### Sessio Cookie
+### Session Cookie
 
 Fica ativo enquanto a sessão do navegador está aberta. Assim que o navegador é fechado, as informações são deletadas.
 
